@@ -24,7 +24,7 @@ export default function Carousel() {
 
 
     return(
-        <div className='container'>
+        <div className='container__slider'>
             <div className='slider'>
                 <Slider {...settings}>
                     {images.map((img, idx) => (

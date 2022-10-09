@@ -19,14 +19,15 @@
     &__list{
         list-style: none;
         display: flex;
-        gap: 13px;
+        gap: 30px;
         padding: 0;
-        a{
+        li{
             text-decoration: none;
             font-weight: 600;
             font-size: 15px;
             line-height: 18px;
             color: #0E0C0D;
+            cursor: pointer;
             &:hover{
                 color: #ccc;
             }
