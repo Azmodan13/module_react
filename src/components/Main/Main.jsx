@@ -1,5 +1,7 @@
 // import './main/scss';
 import Item from "./Item/Item"
+import Stocks from "./Stocks/Stocks"
+import PayAndDelivery from "./PayAndDelivery/PayAndDelivery"
 
 export default function Main({data}){
 
@@ -13,7 +15,9 @@ export default function Main({data}){
             <Item data={data.noodles} id='noodles' title='Локшина'/>
             <Item data={data.drink} id='drink' title='Напої'/>
             <Item data={data.dessert} id='dessert' title='Десерти'/>
+            <Stocks/>
         </div>
+            <PayAndDelivery/>
         </main>
     )
 }

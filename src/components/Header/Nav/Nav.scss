@@ -3,7 +3,8 @@
     &__btn__login{
         cursor: pointer;
         &:hover{
-            color: #ccc;
+            color: #FF2E65;
+            text-decoration: underline;
         }
     }
     &__btn__wrapper{
@@ -29,7 +30,8 @@
             color: #0E0C0D;
             cursor: pointer;
             &:hover{
-                color: #ccc;
+                color: #FF2E65;
+                text-decoration: underline;
             }
         }
     }

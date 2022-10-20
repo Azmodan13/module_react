@@ -24,6 +24,7 @@ export default function Carousel() {
 
 
     return(
+        <div className='container__width'>
         <div className='container__slider'>
             <div className='slider'>
                 <Slider {...settings}>
@@ -34,6 +35,8 @@ export default function Carousel() {
                     ))}
                 </Slider>
             </div>
+        </div>
+
         </div>
 
     )

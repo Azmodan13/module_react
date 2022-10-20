@@ -110,10 +110,21 @@ export default function Nav(){
                     Десерти
                     </Link>
                 </li>
+                <li>
+                    <Link
+                    activeClass="active"
+                    to="stocks"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    >
+                    Акції
+                    </Link>
+                </li>
 
 
-                <li><a href="#">Акції</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li>Контакты</li>
             </ul>
 
                 <div className='nav__btn__wrapper'>
