@@ -8,7 +8,7 @@ export default function Stock({dataStock}){
     return(
         <div className='container'>
             <section className='stock__wrapper'>
-                <p className='title'> Акции </p>
+                <p className='title'> Акції </p>
                 <div className='stock__items'>
 
                 {

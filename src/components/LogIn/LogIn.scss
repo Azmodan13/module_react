@@ -4,6 +4,7 @@
     height: 100%;
     top: 0;
     background-color: rgba(0,0,0,0.56);
+    z-index: 10;
 }
 
 .modal__login{
@@ -40,16 +41,37 @@
         width: 255px;
         height: 48px;
         margin-bottom: 25px;
+        padding-left: 10px;
 
     }
     p{
         margin-top: 15px;
         cursor: pointer;
+        text-decoration: none;
+        color: #000;
         &:hover{
             color: #FF2E65;
         }
     }
 }
+
+.close{
+    span{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 30px;
+    right: -50px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    cursor: pointer;
+    &:nth-last-child(+1){
+        transform: rotate(-45deg);
+    }
+    }
+
+    }
+
 
 // body {
 //     height: 100vh;

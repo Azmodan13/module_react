@@ -1,0 +1,379 @@
+
+    {
+      "pizza": [
+        {
+          "id": 1,
+          "name": "Філадельфія з лососем",
+          "description": "Крем сир , цибуля зелена, лосось, сир моцарела, вершки.",
+          "image": "https://images.pizza33.ua/products/menu/QAWj6pjtshgfH2VewOjZM8slLxcJGJKP.png",
+          "price": 299,
+          "wight": 455,
+          "size": [
+            30,
+            40
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Чотири сири",
+          "description": "Пармезан, сир горгонзола, сир моцарела, сир едам, вершки.",
+          "image": "https://images.pizza33.ua/products/product/8CIgcf77NzAQfLmhNisp2DyHVqvGiZ93.png",
+          "price": 259,
+          "wight": 405,
+          "size": [
+            30,
+            40
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Піца Позітано",
+          "description": "Вершки, бекон, печериці, цибуля, сир моцарела, філе куряче.",
+          "image": "https://images.pizza33.ua/products/product/sESPpRd9KUI483WqkLt5dqMYe6hgxAM2.jpg",
+          "price": 169,
+          "wight": 435,
+          "size": [
+            
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Піца Мілано",
+          "description": "Вершки, шинка, ковбаски пепероні, сир моцарела, каперси.",
+          "image": "https://images.pizza33.ua/products_for_catalog/HinTjaMTmKY2xsxYMhBOKeoFyiSa1cYF.jpg",
+          "price": 169,
+          "wight": 385,
+          "size": [
+            
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Піца Імпреза",
+          "description": "Маслини, бекон, цибуля, соус томатний, сир моцарела, філе куряче.",
+          "image": "https://images.pizza33.ua/products/menu/0O4j4uyjFCINCOIbN2kinbLtdMzCRAA8.jpg",
+          "price": 169,
+          "wight": 420,
+          "size": [
+            
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Піца Formaggio",
+          "description": "Вершки, пармезан, сир горгонзола, сир моцарела, сир едам.",
+          "image": "https://images.pizza33.ua/products/menu/sbyxL8fqLvBFbys0usX1GVVBI3ZOyCbw.jpg",
+          "price": 169,
+          "wight": 390,
+          "size": [
+            
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Піца Козацька",
+          "description": "Шинка, ковбаски мисливські, цибуля, петрушка, соус томатний, сир моцарела, часник, огірки солоні.",
+          "image": "https://images.pizza33.ua/products/menu/sbyxL8fqLvBFbys0usX1GVVBI3ZOyCbw.jpg",
+          "price": 169,
+          "wight": 395,
+          "size": [
+            
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Піца Піканте",
+          "description": "Шинка, ковбаски мисливські, цибуля, петрушка, соус кисло-солодкий, сир моцарела.",
+          "image": "https://images.pizza33.ua/products/menu/3yen6n14tE8soq5aHJsXAStZ0sN2Jt6e.jpg",
+          "price": 169,
+          "wight": 400,
+          "size": [
+            
+          ]
+        }
+      ],
+      "soup": [
+        {
+          "id": 9,
+          "name": "Суп Місо з куркою",
+          "description": "Бульйон рибний, гриби ши-такі, кунжут, локшина удон, місо-паста, сир тофу, філе куряче.",
+          "image": "https://images.pizza33.ua/products/menu/Wyu037cIfxqUXPkaDnRuGjhSXEACuYPS.jpg",
+          "price": 109,
+          "wight": 350
+        },
+        {
+          "id": 10,
+          "name": "Солянка м'ясна",
+          "description": "Маслини, шинка, ковбаски мисливські, лимон, цибуля, морква, петрушка, бульйон курячий, філе куряче, сметана.",
+          "image": "https://images.pizza33.ua/products/menu/sRghZh6qOVkN2TrZucsjngwT0tXlxJh0.jpg",
+          "price": 95,
+          "wight": 300
+        },
+        {
+          "id": 11,
+          "name": "Бульйон курячий",
+          "description": "Цибуля зелена, морква, петрушка, бульйон курячий, яйце перепелине, спагеті.",
+          "image": "https://images.pizza33.ua/products/menu/twhWKKEHYlSAcvrhG9XX1RUfn1wopabH.jpg",
+          "price": 79,
+          "wight": 300
+        },
+        {
+          "id": 12,
+          "name": "Вершковий з лососем",
+          "description": "Бульйон рибний, вершки, крем сир , гриби ши-такі, сир тофу, лосось гарячого копчення, каррі.",
+          "image": "https://images.pizza33.ua/products/menu/9oc0lyTrfbmpLU5izdox0T0lu9g6qQoD.jpg",
+          "price": 189,
+          "wight": 300
+        },
+        {
+          "id": 13,
+          "name": "Місо-суп",
+          "description": "Бульйон рибний, гриби ши-такі, кунжут, місо-паста, сир тофу.",
+          "image": "https://images.pizza33.ua/products/menu/UfPcJl5QBauJEQgbLFvQZBPmrwEshU6d.jpg",
+          "price": 89,
+          "wight": 300
+        }
+      ],
+      "salad": [
+        {
+          "id": 14,
+          "name": "Салат Цезар",
+          "description": "Яйце куряче, салат айсберг, лист салату, помідор, соус для салату цезар (майонез, анчоуси, часник, сік лимону, ворчестер, гірчиця), сухарики пшеничні, пармезан, куряча грудинка.",
+          "image": "https://images.pizza33.ua/products/menu/SOR6aMLWB7RQRTj3ktcwdAe1hJe1EAdI.jpg",
+          "price": 159,
+          "wight": 240
+        },
+        {
+          "id": 15,
+          "name": "Салат Цезар з креветками",
+          "description": "Яйце куряче, салат айсберг, лист салату, помідор, соус для салату цезар (майонез, анчоуси, часник, сік лимону, ворчестер, гірчиця), сухарики пшеничні, пармезан, креветка королівська.",
+          "image": "https://images.pizza33.ua/products/menu/z1gafxmovXHSZP8T9vi20LIp12tYLzuZ.jpg",
+          "price": 212,
+          "wight": 240
+        },
+        {
+          "id": 16,
+          "name": "Салат Грецький",
+          "description": "Орегано, олія оливкова, огірок, маслини, без базилік, цибуля, перець болгарський, помідор, сир бринза, .",
+          "image": "https://images.pizza33.ua/products/menu/EMOLyzSLoIPpyKSrwvW8xxF1SvZRtReF.jpg",
+          "price": 139,
+          "wight": 250
+        },
+        {
+          "id": 17,
+          "name": "Салат Азіатський",
+          "description": "Салат айсберг, кунжут, морква, селера, соус теріякі, огірок, деревні гриби, куряче філе.",
+          "image": "https://images.pizza33.ua/products/menu/NqleMJ4Us1kwDa23nqRBN7vBT2Y6kKeL.jpg",
+          "price": 139,
+          "wight": 250
+        },
+        {
+          "id": 18,
+          "name": "Салат Сивід",
+          "description": "Водорості сивід, кунжут, соус горіховий, .",
+          "image": "https://images.pizza33.ua/products/menu/lHYe0adeEhQGEfV2TLIgQ4wdCFay9I40.jpg",
+          "price": 129,
+          "wight": 130
+        },
+        {
+          "id": 19,
+          "name": "Салат Овочевий",
+          "description": "Олія оливкова, огірок, лист салату, цибуля червона, помідор.",
+          "image": "https://images.pizza33.ua/products/menu/ZfxxxcDr7tBT7Kw21pbcxXOg77g6Dt24.png",
+          "price": 109,
+          "wight": 250
+        }
+      ],
+      "noodles": [
+        {
+          "id": 20,
+          "name": "Паста з яловичиною і томатами",
+          "description": "Олія оливкова, цибуля, перець болгарський, помідор, соус томатний, пармезан, часник, фарш яловичий, паста лінгвіні.",
+          "image": "https://images.pizza33.ua/products_for_catalog/rru95ep59gfzzzSHBZTkbJmRG4Xmu8NA.jpg",
+          "price": 139,
+          "wight": 280
+        },
+        {
+          "id": 21,
+          "name": "Локшина удон з овочами",
+          "description": "Олія соняшникова, печериці, імбир, кунжут, локшина удон, цибуля зелена, морква, перець болгарський, перець чилі, соус соєвий, спаржева квасоля, часник.",
+          "image": "https://images.pizza33.ua/products/menu/RF8Ni9RHOM3wMy1f5NeFOmEBOV7OhZU1.jpg",
+          "price": 155,
+          "wight": 350
+        },
+        {
+          "id": 22,
+          "name": "Локшина удон з куркою",
+          "description": "Олія соняшникова, яйце куряче, гриби ши-такі, імбир, кунжут, локшина удон, цибуля зелена, морква, перець болгарський, перець чилі, соус до локшини з куркою, спаржева квасоля, філе куряче, часник, соус теріякі,.",
+          "image": "https://images.pizza33.ua/products/menu/6n8g0GHH1sCplID2U9MOln4eD8EfZFFk.jpg",
+          "price": 179,
+          "wight": 350
+        },
+        {
+          "id": 23,
+          "name": "Локшина удон зі свининою",
+          "description": "Олія соняшникова, яйце куряче, гриби ши-такі, імбир, кунжут, локшина удон, цибуля зелена, морква, перець болгарський, перець чилі, свинина, соус до свинини, спаржева квасоля, часник.",
+          "image": "https://images.pizza33.ua/products/menu/BXdCZbsc9L7MQs7mA3cziW9tFMhGwYqp.jpg",
+          "price": 189,
+          "wight": 350
+        },
+        {
+          "id": 24,
+          "name": "Локшина удон з телятиною",
+          "description": "Олія соняшникова, яйце куряче, печериці, імбир, кунжут, локшина удон, цибуля зелена, морква, перець болгарський, перець чилі, соус соєвий, спаржева квасоля, часник, телятина.",
+          "image": "https://images.pizza33.ua/products/menu/zJntsEls7y4h1T8TXiGtH9GRTuYXH5YO.jpg",
+          "price": 185,
+          "wight": 350
+        },
+        {
+          "id": 25,
+          "name": "Локшина удон з креветками у вершковому соусі",
+          "description": "Бульйон рибний, олія соняшникова, яйце куряче, вершки, печериці, імбир, кунжут, локшина удон, морква, перець болгарський, соус соєвий, спаржева квасоля, часник, каррі, креветка королівська.",
+          "image": "https://images.pizza33.ua/products/menu/1af4Gc6WsZViFgL5fkNx5u94Mp47W18Q.jpg",
+          "price": 279,
+          "wight": 350
+        },
+        {
+          "id": 26,
+          "name": "Паста з куркою та печерицями",
+          "description": "Олія соняшникова, вершки, печериці, цибуля, філе куряче, часник, бульйон курячий, сир пармезан, паста лінгвіні.",
+          "image": "https://images.pizza33.ua/products/menu/He0AS688ztu6xzbilgvjcDkvXI820FHy.jpg",
+          "price": 139,
+          "wight": 280
+        },
+        {
+          "id": 27,
+          "name": "Паста з беконом і вершками",
+          "description": "Яйце куряче, масло вершкове, вершки, бекон, цибуля, пармезан, бульйон курячий, паста лінгвіні.",
+          "image": "https://images.pizza33.ua/products/menu/5E7qAIQG5t0l69EwzAXau2nv2Y91qvJG.jpg",
+          "price": 129,
+          "wight": 280
+        }
+      ],
+      "drink": [
+        {
+          "id": 28,
+          "name": "RICH Томат 0,5 л",
+          "description": "RICH томатний сік, 0,5 л",
+          "image": "https://images.pizza33.ua/products/menu/yt5BngrLB3EH1vVCiOq0crz131WPk4Ll.png",
+          "price": 55
+        },
+        {
+          "id": 29,
+          "name": "RICH Екзотик 0,5 л",
+          "description": "RICH Екзотик нектар, 0,5 л",
+          "image": "https://images.pizza33.ua/products/menu/0NY8TfkSeBUMP5JfxuipWezvPtBMg1Eb.png",
+          "price": 69
+        },
+        {
+          "id": 30,
+          "name": "RICH Яблуко-Виноград 0,5 л",
+          "description": "RICH яблучно-виноградний нектар, 0,5 л",
+          "image": "https://images.pizza33.ua/products/menu/V5nJAPbLcv0iOLzrKSahF6baqrKjswH7.jpg",
+          "price": 59
+        },
+        {
+          "id": 31,
+          "name": "RICH Яблуко 1 л",
+          "description": "RICH Яблуко 1 л",
+          "image": "https://images.pizza33.ua/products/menu/uIR7kFZvPYbncPYiHiRYbG47cV9vnkhK.jpg",
+          "price": 89
+        },
+        {
+          "id": 32,
+          "name": "Кока-Кола 0,5 л",
+          "description": "Кока-Кола 0,5 л",
+          "image": "https://images.pizza33.ua/products/menu/DMD391QQJ04sXfa8rEYBwDaDYpmMR2g9.png",
+          "price": 55
+        },
+        {
+          "id": 33,
+          "name": "Напій Coca-Cola 1л",
+          "description": "1 літр",
+          "image": "https://images.pizza33.ua/products/menu/EfY3jt9Za5GeJCkj9GRIrXFakNCxMiuS.png",
+          "price": 65
+        },
+        {
+          "id": 34,
+          "name": "Кока-Кола Зеро 0,5 л",
+          "description": "0,5 л",
+          "image": "https://images.pizza33.ua/products/menu/8dng11mFaMTMnovTaMcbYUXKOJg8XVXA.png",
+          "price": 55
+        },
+        {
+          "id": 35,
+          "name": "Пиво Bud",
+          "description": "0,5 л",
+          "image": "https://images.pizza33.ua/products/menu/o5nnGQNhkov6tbbPWadjs3fQvTyXd4L7.jpg",
+          "price": 69
+        }
+      ],
+      "dessert": [
+        {
+          "id": 36,
+          "name": "Чизкейк Нью-Йорк з Чорницею",
+          "description": "Чизкейк Нью-Йорк з Чорницею",
+          "image": "https://images.pizza33.ua/products/menu/YzRoOS9fLHVb8D0ACQFRBDowOqKc16cw.jpg",
+          "price": 105,
+          "wigth": 110
+        },
+        {
+          "id": 37,
+          "name": "Чизкейк Нью-Йорк з Вишнею",
+          "description": "Чизкейк Нью-Йорк з Вишнею",
+          "image": "https://images.pizza33.ua/products/menu/9ZxoV0JsWf6adgJtbcEAboHJlCtKumgu.jpg",
+          "price": 105,
+          "wigth": 110
+        },
+        {
+          "id": 38,
+          "name": "Чизкейк Нью-Йорк з Брауні",
+          "description": "Чизкейк Нью-Йорк з Брауні",
+          "image": "https://images.pizza33.ua/products/menu/aKrRZooxeFHv9nYtnxvbaBzIvB6k6Frh.jpg",
+          "price": 105,
+          "wigth": 110
+        }
+      ],
+      "new": [
+        {
+          "id": 4,
+          "name": "Піца Мілано",
+          "description": "Вершки, шинка, ковбаски пепероні, сир моцарела, каперси.",
+          "image": "https://images.pizza33.ua/products_for_catalog/HinTjaMTmKY2xsxYMhBOKeoFyiSa1cYF.jpg",
+          "price": 169,
+          "wight": 385,
+          "size": [
+            
+          ]
+        },
+        {
+          "id": 18,
+          "name": "Салат Сивід",
+          "description": "Водорості сивід, кунжут, соус горіховий, .",
+          "image": "https://images.pizza33.ua/products/menu/lHYe0adeEhQGEfV2TLIgQ4wdCFay9I40.jpg",
+          "price": 129,
+          "wight": 130
+        },
+        {
+          "id": 14,
+          "name": "Салат Цезар",
+          "description": "Яйце куряче, салат айсберг, лист салату, помідор, соус для салату цезар (майонез, анчоуси, часник, сік лимону, ворчестер, гірчиця), сухарики пшеничні, пармезан, куряча грудинка.",
+          "image": "https://images.pizza33.ua/products/menu/SOR6aMLWB7RQRTj3ktcwdAe1hJe1EAdI.jpg",
+          "price": 159,
+          "wight": 240
+        },
+        {
+          "id": 2,
+          "name": "Чотири сири",
+          "description": "Пармезан, сир горгонзола, сир моцарела, сир едам, вершки.",
+          "image": "https://images.pizza33.ua/products/product/8CIgcf77NzAQfLmhNisp2DyHVqvGiZ93.png",
+          "price": 259,
+          "wight": 405,
+          "size": [
+            30,
+            40
+          ]
+        }
+      ],
+      "item": "1"
+    }

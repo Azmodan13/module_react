@@ -2,9 +2,14 @@
 import './Nav.scss';
 import Btn from '../../Btn/Btn';
 import UpBtn from './UpBtn/UpBtn';
+import {auth} from '../../../Firebase/firebaseConfig'
 import { Link, animateScroll as scroll } from "react-scroll";
+
 import { useEffect, useState } from 'react';
-export default function Nav(){
+import { connect } from 'react-redux';
+
+
+function Nav({itemsCount, setLogIn, logOut}){
 
     const [scroll, setScroll] = useState(0)
 
@@ -13,12 +18,13 @@ export default function Nav(){
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+
     const handleScroll = () => {
         setScroll(window.scrollY);
     };
 
     return(
-
+        <div className='container'>
         <nav className='nav'>
             <div className='nav__wrapper' >
             <ul className='nav__list' >
@@ -124,12 +130,33 @@ export default function Nav(){
                 </li>
 
 
-                <li>Контакты</li>
+        
+
+                <li >
+                <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    >
+                    Контакты
+                    </Link>
+                    </li>
             </ul>
 
                 <div className='nav__btn__wrapper'>
-                    <div className='nav__btn__login'>Вхід</div>
-                    <Btn btnText='В кошик |  1' />
+
+
+                    <p  onClick={logOut} className='nav__btn__login'> Вихід  </p>
+
+                    <p  onClick={()=> setLogIn(true)} className='nav__btn__login'>Вхід  </p>
+
+
+
+
+                    <Btn url='basket' btnText={`В кошик | ${itemsCount}` }/>
                 </div>
             </div>
 
@@ -144,6 +171,13 @@ export default function Nav(){
                         {scroll > document.documentElement.clientHeight && <UpBtn/>}
                     </Link>
         </nav>
+        </div>
 
     )
 }
+
+const mapStateToProps = state => ({
+    itemsCount: state.cart.cartItems.reduce((acc, item) => acc += item.quantity, 0)
+  });
+
+  export default connect(mapStateToProps)(Nav);

@@ -18,7 +18,7 @@ export default function Stocks(){
 
             </div>
         </div>
-        <Btn btnText='Всі акції' btnWidth={'160px'} btnHeight={'48px'}/>
+        <Btn btnText='Всі акції' btnWidth={'160px'} btnHeight={'48px'} url='stock'/>
         </div>
     )
 }

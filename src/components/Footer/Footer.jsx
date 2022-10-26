@@ -13,7 +13,7 @@ export default function Footer() {
     return(
         <footer>
         <div className='container'>
-            <div className='footer'>
+            <div id='contact' className='footer'>
                 <img className='footer__img' src={footerImg} alt="footerImg" />
                 <div className='footer__left'>
                 <svg width="208" height="64" viewBox="0 0 208 64" fill="none" xmlns="http://www.w3.org/2000/svg">

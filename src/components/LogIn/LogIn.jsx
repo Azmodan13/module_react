@@ -1,19 +1,31 @@
 import './LogIn.scss'
-import Btn from '../Btn/Btn'
 
-export default function LogIn({title,footer, btn}){
+export default function LogIn({logIn, setLogIn, setRegistration, setLogInEmail, setLogInPassword, login}){
+
+    function onClick(){
+        setRegistration(true)
+        setLogIn(false)
+    }
 
     return(
-        <div className='overlay'>
-            <div className='modal__login'>
-                <h1 className='modal__login__title' >{title}</h1>
-                <label htmlFor="email">   Ваш e-mail </label> <input  id='email' required type="email" name='email' />
-                <label htmlFor="password"> Ваш пароль </label>  <input id='password' required type="password" name='password' />
+        <div>
+            {
+                logIn ? <div className='overlay'>
+                <div className='modal__login'>
+                    <div className='close' onClick={()=>setLogIn(false)} >
+                    <span></span>
+                    <span></span>
+                    </div>
+                    <h1 className='modal__login__title' >Вхід</h1>
+                    <label htmlFor="email">   Ваш e-mail </label> <input onChange={setLogInEmail}  id='email' required type="email" name='email'  />
+                    <label htmlFor="password"> Ваш пароль </label>  <input onChange={setLogInPassword} id='password' required type="password" name='password'  />
+                    <button  className='btn' onClick={login}  style={{width: '225px', height:'55px'}}> Увійти </button>
 
-                <Btn btnText={btn} btnWidth='225px' btnHeight='55px'/>
-
-                <p>{footer} </p>
-            </div>
+    
+                    <p onClick={()=> onClick()}>Зареєструватися</p>
+                </div>
+            </div> : null
+            }
         </div>
     )
 }

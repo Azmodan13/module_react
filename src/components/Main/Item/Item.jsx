@@ -1,23 +1,24 @@
 import './Item.scss';
-import Btn from '../../Btn/Btn';
+// import Btn from '../../Btn/Btn';
 
-export default function Item({data, title, id}){
+export default function Item({data, title, id, addItem}){
+
 
     return(
         <section className='item__wrapper'>
-            <p className='title'> {title} </p>
+            <p className='title' id={id}> {title} </p>
             <div className='items'>
 
                 {
                     data ? data.map((item, index)=> {
                         return(
-                <article key={item.id} id={id} className='item'>
+                <article key={item.id} id={item.id} className='item'>
                     <img className='item__img' src={item.image} alt={item.name} />
                     <p className='item__title'>{item.name}</p>
                     <p className='item__description'>{item.description}</p>
                     <div className='item__footer'>
                         <span>{item.price} грн.</span>
-                        <Btn btnText='В кошик' btnWidth={'125px'} btnHeight={'35px'}/>
+                        <button onClick={() => addItem(item)}  className='btn'  style={{width: '125px', height:'35px'}}>В кошик</button>
                     </div>
                 </article>
 

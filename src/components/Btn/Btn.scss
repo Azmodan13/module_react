@@ -11,6 +11,10 @@
     color: #FFFFFF;
     cursor: pointer;
     transition: all 500ms;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
     &:hover{
         transform: scale(1.05);
     }
