@@ -17,8 +17,8 @@ import New from './components/New/New';
 import Carousel from './components/Carousel/Carousel';
 import Registration from './components/Registration/Registration';
 
-import {createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut} from 'firebase/auth'
 import {auth} from './Firebase/firebaseConfig'
+import {createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut, getAuth} from 'firebase/auth'
 
 
 
@@ -36,8 +36,9 @@ const [registerPassword, setRegisterPassword] = useState(''
 const [logInEmail, setLogInEmail] = useState('')
 const [logInPassword, setLogInPassword] = useState('')
 
-// const [user, setUser] = useState([auth.currentUser.email])
+const [user, setUser] = useState([])
 
+const auth = getAuth();
 // onAuthStateChanged(auth, ( currentUser) => {
 //   setUser(currentUser)
 // })
@@ -86,7 +87,7 @@ const logOut = async () => {
             <Route exact path='/' >
         <LogIn logIn={logIn} setLogIn={setLogIn} setRegistration={setRegistration} setLogInEmail={setLogInEmail} setLogInPassword={setLogInPassword} login={login}/>
         <Registration setLogIn={setLogIn} setRegistration={setRegistration} registration={registration} setRegisterEmail={setRegisterEmail} setRegisterPassword={setRegisterPassword} register={register} />
-            <Nav setLogIn={setLogIn} logOut={logOut}/>
+            <Nav setLogIn={setLogIn} logOut={logOut} user={user}/>
             <div>{auth.currentUser ? auth.currentUser.email : null}</div>
             <Carousel/>
             <New dataNew={data.new}/>

@@ -2,14 +2,13 @@
 import './Nav.scss';
 import Btn from '../../Btn/Btn';
 import UpBtn from './UpBtn/UpBtn';
-import {auth} from '../../../Firebase/firebaseConfig'
 import { Link, animateScroll as scroll } from "react-scroll";
-
 import { useEffect, useState } from 'react';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
-function Nav({itemsCount, setLogIn, logOut}){
+
+function Nav({setLogIn, logOut}){
 
     const [scroll, setScroll] = useState(0)
 
@@ -22,6 +21,16 @@ function Nav({itemsCount, setLogIn, logOut}){
     const handleScroll = () => {
         setScroll(window.scrollY);
     };
+
+    const cart = useSelector((state) => state.cart)
+
+const getTotalQuantity = () => {
+  let total = 0
+  cart.forEach(item => {
+    total += item.quantity
+  })
+  return total
+}
 
     return(
         <div className='container'>
@@ -154,9 +163,7 @@ function Nav({itemsCount, setLogIn, logOut}){
                     <p  onClick={()=> setLogIn(true)} className='nav__btn__login'>Вхід  </p>
 
 
-
-
-                    <Btn url='basket' btnText={`В кошик | ${itemsCount}` }/>
+                    <Btn url='basket' btnText={`В кошик | ${getTotalQuantity()}`}/>
                 </div>
             </div>
 
@@ -176,8 +183,6 @@ function Nav({itemsCount, setLogIn, logOut}){
     )
 }
 
-const mapStateToProps = state => ({
-    itemsCount: state.cart.cartItems.reduce((acc, item) => acc += item.quantity, 0)
-  });
 
-  export default connect(mapStateToProps)(Nav);
+
+  export default Nav;

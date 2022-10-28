@@ -7,6 +7,10 @@ export default function LogIn({logIn, setLogIn, setRegistration, setLogInEmail, 
         setLogIn(false)
     }
 
+    function onsubmit(e){
+        e.preventDefault()
+    }
+
     return(
         <div>
             {
@@ -17,10 +21,11 @@ export default function LogIn({logIn, setLogIn, setRegistration, setLogInEmail, 
                     <span></span>
                     </div>
                     <h1 className='modal__login__title' >Вхід</h1>
+                    <form onSubmit={onsubmit}>
                     <label htmlFor="email">   Ваш e-mail </label> <input onChange={setLogInEmail}  id='email' required type="email" name='email'  />
                     <label htmlFor="password"> Ваш пароль </label>  <input onChange={setLogInPassword} id='password' required type="password" name='password'  />
                     <button  className='btn' onClick={login}  style={{width: '225px', height:'55px'}}> Увійти </button>
-
+                    </form>
     
                     <p onClick={()=> onClick()}>Зареєструватися</p>
                 </div>

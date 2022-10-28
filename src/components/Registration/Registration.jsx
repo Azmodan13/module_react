@@ -7,6 +7,10 @@ export default function Registration( {setRegistration,setLogIn, registration, s
         setLogIn(true)
     }
 
+    function onsubmit(e){
+        e.preventDefault()
+    }
+
     return(
         <div>
             {
@@ -17,9 +21,11 @@ export default function Registration( {setRegistration,setLogIn, registration, s
                     <span></span>
                     </div>
                     <h1 className='modal__login__title' >Реєстрація</h1>
+                    <form onSubmit={onsubmit}>
                     <label htmlFor="email">   Ваш e-mail </label> <input  id='email' required type="email" name='email' onChange={(e) => setRegisterEmail(e.target.value)} />
                     <label htmlFor="password"> Ваш пароль </label>  <input id='password' required type="password" name='password' onChange={(e) => setRegisterPassword(e.target.value)}  />
                     <button  className='btn'  style={{width: '225px', height:'55px'}} onClick={register}> Зареєструватися </button>
+                    </form>
 
     
                     <p onClick={()=>onClick()}>Вхід</p>

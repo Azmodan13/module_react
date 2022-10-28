@@ -1,7 +1,10 @@
 import './Item.scss';
-// import Btn from '../../Btn/Btn';
+import { useDispatch } from 'react-redux';
+import {addToCart} from '../../../redux/cartSlice';
 
-export default function Item({data, title, id, addItem}){
+
+export default function Item({data, title, id}){
+    const dispatch = useDispatch()
 
 
     return(
@@ -18,7 +21,7 @@ export default function Item({data, title, id, addItem}){
                     <p className='item__description'>{item.description}</p>
                     <div className='item__footer'>
                         <span>{item.price} грн.</span>
-                        <button onClick={() => addItem(item)}  className='btn'  style={{width: '125px', height:'35px'}}>В кошик</button>
+                        <button className='btn'  style={{width: '125px', height:'35px'}} onClick={()=> dispatch(addToCart(item))}>В кошик</button>
                     </div>
                 </article>
 
@@ -31,3 +34,5 @@ export default function Item({data, title, id, addItem}){
         </section>
     )
 }
+
+

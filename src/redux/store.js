@@ -1,10 +1,36 @@
-import { createStore, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
+import {
+    configureStore
+} from "@reduxjs/toolkit";
+import {
+    cartReducer
+} from "./cartSlice";
+import storage from 'redux-persist/lib/storage';
+import {
+    persistStore,
+    persistReducer,
+    FLUSH,
+    REHYDRATE,
+    PAUSE,
+    PERSIST,
+    PURGE,
+    REGISTER,
+} from 'redux-persist'
 
-import rootReducer from './root-reducer';
+const persistConfig = {
+    key: 'root',
+    storage,
+}
 
-const middlewares = [logger];
+const persistedReducer = persistReducer(persistConfig, cartReducer)
 
-const store = createStore(rootReducer, applyMiddleware(...middlewares));
+export const store = configureStore({
+    reducer: persistedReducer,
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware({
+            serializableCheck: {
+                ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+            },
+        }),
+})
 
-export default store;
+export const persistor = persistStore(store)
